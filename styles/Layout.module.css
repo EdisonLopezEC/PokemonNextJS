@@ -1,11 +1,24 @@
-.pie {
+/* .pie {
     position:fixed;
     left:0px;
     bottom:0px;
     height:30px;
     width:100%;
-    background:#999;
- }
+    background:#e3350d;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+  } */
+
+/* .pie{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background:#e3350d;
+
+} */
  .container {
     max-width: 36rem;
     padding: 0 1rem;
@@ -21,3 +34,25 @@
   .backToHome {
     margin: 3rem 0 0;
   }
+
+  .page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -142px; 
+  }
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .pie, .page-wrap:after {
+    height: 130px; 
+  }
+  .pie {
+    background:#e3350d;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+  }
+  

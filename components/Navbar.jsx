@@ -9,7 +9,9 @@ export default function Navbar() {
         <Link href="/search" className={styles.container}>
             <a className={styles.link}>Search</a>
         </Link>
-
+        <Link href="/pokemon" className={styles.container}>
+            <a className={styles.link}>Pokemones</a>
+        </Link>
     </div>
   )
 }

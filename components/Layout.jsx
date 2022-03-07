@@ -9,7 +9,7 @@ const name="PokeApp"
 
 export default function Layout({children, title, description, home}) {
   return (
-    <div>
+    <div >
         <Head>
             <title>{title}</title>
             <meta name="description" content={description} />
@@ -51,10 +51,13 @@ export default function Layout({children, title, description, home}) {
       </header>
         <Navbar />
         <main>
+          <div className="page-wrap">
             {children}
+
+          </div>
         </main>
         <footer className={styles.pie}>
-            footer
+            Pokemon App
         </footer>
     </div>
   )
